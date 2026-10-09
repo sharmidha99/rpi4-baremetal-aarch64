@@ -10,6 +10,9 @@ heartbeat. No operating system, no libc — just you and the hardware.
 Great for learning: embedded systems, ARMv8-A, bare-metal boot, cross-compiling,
 interrupts/exceptions, and memory-mapped I/O (MMIO).
 
+> 📖 New to the code? Read **[ARCHITECTURE.md](ARCHITECTURE.md)** for a full
+> boot-to-blink walkthrough of how control flows and what every file does.
+
 ## Features
 
 - Boots as `kernel8.img` at `0x80000` (AArch64 load address)
