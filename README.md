@@ -98,6 +98,17 @@ Makefile          - cross-compile build (aarch64-linux-gnu)
 3. Context switch (save/restore general + SIMD regs) and a round-robin scheduler.
 4. Optionally enable the MMU / page tables.
 
+## Skills demonstrated
+
+- **C** and **ARM (AArch64) assembly** for freestanding, no-libc environments
+- **ARMv8-A / AArch64** architecture: exception levels, `VBAR_EL1`, `SVC` handling
+- **Bare-metal boot**: reset vector, multi-core parking, `.bss` zeroing, stack setup
+- **Peripheral/driver development**: PL011 UART and GPIO via memory-mapped I/O (MMIO)
+- **Interrupts & exceptions**: building and installing an exception vector table
+- **Toolchain & build**: cross-compiling with `aarch64-linux-gnu`, `Makefile`,
+  custom `linker.ld`, `objcopy` to a raw `kernel8.img`
+- **Hardware bring-up & debugging**: serial console over USB-TTL at 115200 8N1
+
 ## License
 
 Released under the [MIT License](LICENSE).
